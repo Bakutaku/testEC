@@ -1,0 +1,13 @@
+.img-fluid.rounded-start{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+  }
+   
+  .update{
+    background-color: rgba(28, 179, 5, 0.459);
+  }
+   
+  #updateBtn{
+    display: none;
+  }

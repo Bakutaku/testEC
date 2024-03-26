@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>TestEC</display-name>
+	<welcome-file-list>
+		<welcome-file>home</welcome-file>
+	</welcome-file-list>
+
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>Certification Area</web-resource-name>
+			<url-pattern>/BuyServlet</url-pattern>
+			<url-pattern>/address.jsp</url-pattern>
+			<url-pattern>/Login</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>admin</role-name>
+			<role-name>user</role-name>
+		</auth-constraint>
+	</security-constraint>
+
+	<security-constraint>
+		<web-resource-collection>
+			<web-resource-name>Certification Area</web-resource-name>
+			<url-pattern>/ItemManager</url-pattern>
+		</web-resource-collection>
+		<auth-constraint>
+			<role-name>admin</role-name>
+		</auth-constraint>
+	</security-constraint>
+
+
+	<login-config>
+		<auth-method>FORM</auth-method>
+		<form-login-config>
+			<form-login-page>/login.jsp</form-login-page>
+			<form-error-page>/error_login.jsp</form-error-page>
+		</form-login-config>
+	</login-config>
+
+	<security-role>
+		<role-name>admin</role-name>
+	</security-role>
+
+	<security-role>
+		<role-name>user</role-name>
+	</security-role>
+
+	<error-page>
+		<error-code>404</error-code>
+		<location>/error.jsp?error=ページが見つかりませんでした</location>
+	</error-page>
+	<error-page>
+		<error-code>403</error-code>
+		<location>/error.jsp?error=このページにアクセスする権限がありません</location>
+	</error-page>
+	<error-page>
+		<error-code>600</error-code>
+		<location>/error.jsp?error=サーバ側で問題が発生しました。</location>
+	</error-page>
+
+</web-app>

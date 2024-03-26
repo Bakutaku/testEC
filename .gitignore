@@ -1,0 +1,44 @@
+HELP.md
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+
+### VS Code ###
+.vscode/
+
+.settings
+.build
+.libs
+.classpath
+.project
+
+libs/mysql-connector-j-8.2.0.jar
+src/main/webapp/img
+src/main/webapp/WEB-INF/lib/mysql-connector-j-8.2.0.jar
+src/main/webapp/META-INF/context.xml

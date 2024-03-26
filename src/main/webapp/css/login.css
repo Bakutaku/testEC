@@ -1,0 +1,27 @@
+.loginFrom{
+    background-color: rgba(255, 255, 255, 0.88);
+    width: 450px;
+    border-radius: 30px; /* 角を丸くするやつ */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+ 
+.center{
+    display: flex;
+    justify-content: center; /*左右中央揃え*/
+    align-items: center;     /*上下中央揃え*/
+}
+ 
+.space{
+    padding: 2%;
+    width: 400px;
+}
+ 
+.baColor{
+    background-color: #65647C;
+}
+ 
+.sample-box-shadow{
+    box-shadow: 10px 10px 40px -10px;
+}

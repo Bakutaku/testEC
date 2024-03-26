@@ -1,0 +1,23 @@
+.ad-item img{
+    width: 100%;
+    object-fit: contain;
+    background-color: rgba(0, 0, 0, 0.131);
+  }
+   
+  .carousel-indicators button {
+    display: none; /* インジケーターを非表示にする */
+  }
+   
+  .carousel:hover .carousel-indicators button {
+    display: block; /* カーソルが要素にホバーしたときに表示させる */
+  }
+   
+  .item-List{
+    margin-top: 10px;
+  }
+   
+  .card-img-top{
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+  }
